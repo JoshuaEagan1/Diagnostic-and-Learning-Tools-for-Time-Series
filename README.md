@@ -35,7 +35,7 @@ For the AR(1) process, this simplifies down to:
 
 ![Alt
 text](/equasions/2.png)
-for = 1,2, â¦ where phi is the sample autocorrelation at lag tau
+for = 1,2, \... where phi is the sample autocorrelation at lag tau
 
 The actual confidence intervals are calculated using the following
 formula:
@@ -285,7 +285,7 @@ as well as one in
 I leaned on [this
 post](https://stats.stackexchange.com/questions/310470/lag-wise-confidence-band-for-sample-autocorrelation-function-of-ar1-process#310578)
 for the creation of `ar1.est` and for some of the syntax for plotting
-the `ar1.acf` and `ma1.acf` functions. Special thanks to [Dr.Â Lori
+the `ar1.acf` and `ma1.acf` functions. Special thanks to [Dr\. Lori
 Thombs](http://faculty.missouri.edu/~thombsl/) for her guidance on this
 project and for her ideas to write the first three functions in this
 document.
