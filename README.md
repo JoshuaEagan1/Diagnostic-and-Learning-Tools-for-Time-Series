@@ -25,7 +25,7 @@ forcasting future values.
 
 This function takes a time series and computes confidence intervals
 around its ACF on the assumption that its autocorrelation suggests the
-AR(1) model is appropriate. It uses variances from Bartlettâs
+AR(1) model is appropriate. It uses variances from Bartlett's
 Approximation, shown below.
 
 ![Alt
@@ -34,14 +34,14 @@ text](/equasions/1.png)
 For the AR(1) process, this simplifies down to:
 
 ![Alt
-text](C:/Users/Josh/Desktop/TS%20analysis/final%20project/Diagnostic%20and%20Learning%20Tools%20for%20Time%20Series/equasions/2.png)
+text](/equasions/2.png)
 for = 1,2, â¦ where phi is the sample autocorrelation at lag tau
 
 The actual confidence intervals are calculated using the following
 formula:
 
 ![Alt
-text](C:/Users/Josh/Desktop/TS%20analysis/final%20project/Diagnostic%20and%20Learning%20Tools%20for%20Time%20Series/equasions/3.png)
+text](/equasions/3.png)
 
 The confidence intervals can be compared against theoretical
 autocorrelation values of an AR(1) parameter provided by the user.
@@ -99,20 +99,20 @@ Notes:
 
 Much like `ar1.acf`, this function takes a time series, finds its ACF,
 and computes confidence intervals around the ACF testing the assumption
-that the data is an MA(1) series using variances from Bartlettâs
+that the data is an MA(1) series using variances from Bartlet's
 Approximation (shown above.)
 
-For the MA(1) case, Bartlettâs Approximation simplifies to the
+For the MA(1) case, Bartlett's Approximation simplifies to the
 following:
 
 ![Alt
-text](C:/Users/Josh/Desktop/TS%20analysis/final%20project/Diagnostic%20and%20Learning%20Tools%20for%20Time%20Series/equasions/4.png)
+text](/equasions/4.png)
 
 As above, the confidence intervals around the sample ACF are computed
 using the formula below.
 
 ![Alt
-text](C:/Users/Josh/Desktop/TS%20analysis/final%20project/Diagnostic%20and%20Learning%20Tools%20for%20Time%20Series/equasions/5.png)
+text](/equasions/5.png)
 
 The `ma1.acf()` function takes the following inputs:
 
@@ -165,7 +165,7 @@ Notes:
 ## Diagnostic Tools
 
 `eacf_pic()` and `ar1.est()` are a pair of functions which will be more
-useful in an applied setting where you donât have the ability to know
+useful in an applied setting where you don't have the ability to know
 the true ARMA(p,q) order underlying a timeseries.
 
 ### eacf\_pic
@@ -177,7 +177,7 @@ in the `ggplot2` package. The main value added of this in comparison to
 the
 [eacf()](https://www.rdocumentation.org/packages/TSA/versions/1.3/topics/eacf)
 function in the `TSA` package is that rather than a binary indicator
-significance, âXâ or âOâ, being displayed in the console, this function
+significance (X or O) being displayed in the console, this function
 produces a picture of the eacf that clearly shows significance using
 colors (red tiles are significant at the 5% level and grey tiles are
 insignificant) while also indicating the level of significance using
