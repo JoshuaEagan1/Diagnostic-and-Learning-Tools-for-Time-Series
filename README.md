@@ -29,7 +29,7 @@ AR(1) model is appropriate. It uses variances from Bartlettâs
 Approximation, shown below.
 
 ![Alt
-text](C:/Users/Josh/Desktop/TS%20analysis/final%20project/Diagnostic%20and%20Learning%20Tools%20for%20Time%20Series/equasions/1.png)
+text](/equasions/1.png)
 
 For the AR(1) process, this simplifies down to:
 
